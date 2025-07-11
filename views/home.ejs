@@ -1,0 +1,50 @@
+<%- include('partials/head') %>
+<body class="bg-gray-50 min-h-screen">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-gray-800">AJIO</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="/men" class="text-gray-700 hover:text-blue-600">Men</a></li>
+                    <li><a href="/women" class="text-gray-700 hover:text-blue-600">Women</a></li>
+                    <li><a href="/kids" class="text-gray-700 hover:text-blue-600">Kids</a></li>
+                    <li><a href="/sale" class="text-gray-700 hover:text-blue-600">Sale</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-12">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Welcome to AJIO</h2>
+            <p class="text-lg text-gray-600 mb-8">Discover the latest trends in fashion for Men, Women, and Kids.</p>
+            <a href="/shop" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <img src="https://via.placeholder.com/150x150?text=Men" alt="Men" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-2">Men</h3>
+                <p class="text-gray-600 mb-4">Trendy styles and exclusive collections for men.</p>
+                <a href="/men" class="text-blue-600 hover:underline">Explore</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <img src="https://via.placeholder.com/150x150?text=Women" alt="Women" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-2">Women</h3>
+                <p class="text-gray-600 mb-4">Latest fashion and accessories for women.</p>
+                <a href="/women" class="text-blue-600 hover:underline">Explore</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <img src="https://via.placeholder.com/150x150?text=Kids" alt="Kids" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-2">Kids</h3>
+                <p class="text-gray-600 mb-4">Fun and stylish outfits for kids of all ages.</p>
+                <a href="/kids" class="text-blue-600 hover:underline">Explore</a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white border-t mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-500">
+            &copy; <%= new Date().getFullYear() %> AJIO. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
